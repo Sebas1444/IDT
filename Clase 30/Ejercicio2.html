@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script type='text/javascript' src="./jquery-3.6.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#opacidad02").on("click", function () {
+                $("#rectangulo").fadeTo("slow", 0.2);
+            });
+            $("#opacidad08").on("click", function () {
+                $("#rectangulo").fadeTo("fast", 0.8);
+            });
+            $("#alternar01").on("click", function () {
+                $("#rectangulo").fadeToggle();
+            });
+            $("#alternar02").on("click", function () {
+                $("#rectangulo").fadeToggle(4000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input type="button" id="opacidad02" value="Asignar un 0.2 de opacidad con
+fadeTo() con duración 'slow'"><br><br>
+    <input type="button" id="opacidad08" value="Asignar un 0.8 de opacidad con
+fadeTo() con duración 'fast'"><br><br>
+    <input type="button" id="alternar01" value="Alternar opacidad con fadeToggle()">
+    <br><br>
+    <input type="button" id="alternar02" value="Alternar opacidad durante 4000
+milisegundos con fadeToggle()"><br><br>
+    <div id="rectangulo" style="padding: 10px; background-color: #ffcc99; width: 500px;
+top:20px;left:40%; float:right; height:500px;position:absolute">CAPA1</div>
+</body>
+
+</html>
