@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script type='text/javascript' src="./jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <div id="clickme1">Click aqui para mostrar lento</div><br>
+    <div id="clickme2">Click aqui para ocultar lento</div><br>
+    <div id="clickme3">Click aqui para mostrar rapido</div><br>
+    <div id="clickme4">Click aqui para ocultar rapido</div><br>
+    <img id="capa1" src="neo.webp" width="500" height="500">
+    <script>
+        $("#clickme1").on('click', function () {
+            $("#capa1").fadeIn("slow");
+        });
+        $("#clickme2").on('click', function () {
+            $("#capa1").fadeOut("slow");
+        });
+        $("#clickme3").on('click', function () {
+            $("#capa1").fadeIn("fast");
+        });
+        $("#clickme4").on('click', function () {
+            $("#capa1").fadeOut("fast");
+        });
+    </script>
+</body>
+
+</html>
