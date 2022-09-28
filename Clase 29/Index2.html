@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+    <script src="./jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <input type="text" id="campo"></input>
+    <button id="habilitar">Habilita</button>
+    <button id="desabilitar">Desabilita</button>
+    <button id="muestra">Muestra</button>
+    <script>
+        $("#habilitar").on("click", function () {
+            $("#campo").prop("disabled", false);
+        });
+        $("#desabilitar").on('click', function () {
+            $("#campo").prop('disabled', true);
+        });
+        $("#muestra").on('click', function () {
+            alert("El valor en el campo es:" + $("#campo").val());
+        });
+    </script>
+</body>
+
+</html>

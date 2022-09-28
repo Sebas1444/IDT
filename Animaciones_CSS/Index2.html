@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <head>
+        <style>
+            p{
+                animation-duration: 3s;
+                animation-name: slidein;
+            }
+            /*Vamos a añadir otro fotograma a la animación de nuestro
+            ejemplo anterior. Pongamos que queremos que el tamaño de 
+            fuente del encabezado aumente a medida que se mueve durante
+            un tiempo y después disminuye hasta el tamaño original.
+            Esto es tan sencillo como añadir este fotograma:*/
+            @keyframes slidein{
+                from{
+                    margin-left: 100%;
+                    width: 300%;
+                }
+                75%{
+                    font-size: 300%;
+                    margin-left: 25%;
+                }
+                to{
+                    margin-left: 0%;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p>Parrafo</p>
+    </body>
+</html>

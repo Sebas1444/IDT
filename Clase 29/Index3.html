@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#mostrar").on("click", function () {
+                $('#target').show(); //muestro mediante id
+                $('.target').show(); //muestro mediante clase
+            });
+            $("#ocultar").on("click", function () {
+                $('#target').hide("linear"); //oculto mediante id
+                $('.target').hide("linear"); //oculto mediante clase
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input type="button" id="mostrar" name="boton1" value="Click para mostrar
+elementos" />
+    <input type="button" id="ocultar" name="boton2" value="Click para ocultar
+elementos"><br /><br />
+    <input id="target" type="button" value="ESTE BOTÓN APARECE Y
+DESAPARECE"><br><br>
+    <img width="250" src="neo.webp" class="target"><br>
+</body>
+
+</html>

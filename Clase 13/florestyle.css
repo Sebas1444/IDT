@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+
+}
+header{
+    background-color: #aad224;
+}
+header #titulo {
+    margin: 0 auto;
+    padding-bottom: 55px;
+    padding-top: 50px;
+}
+
+header #titulo h1{
+    margin: 0 auto;
+    color: white;
+    font-size: 50px;
+    padding-top: 40px;
+    padding-left: 330px;
+
+}
+#menu {
+    background-color:  #D63D8F;
+    width: 1000px;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#menu .current_page_item {
+    background-color: #9D66DE;
+}
+#menu ul {
+    padding: 0 30px;
+}
+
+#menu ul li {
+    display: inline;
+    padding: 28px 22px 22px 27px;
+}
+#menu ul li .current_page_item{
+    padding: 28px 22px 22px 27px;
+}
+
+#menu ul li a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    
+
+}
+
+.active,
+#menu ul li:hover {
+    background-color: #9D66DE;
+}
+
+#menu ul li.active a,
+#menu ul li a:hover {
+    background-color: #9D66DE;
+    color: white;
+    text-shadow: #43206B -1px 1px 2px; 
+    margin-top:-6px; 
+    padding-bottom:6px;
+
+}
+#debajo{
+    background-color: white;
+    width: 1000px;
+    padding-bottom: 34px;
+    margin: 0 auto;
+    content: " ";
+}
+article h3{
+    width: 90%;
+    margin: 0 auto;
+}
+#caja{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(231,238,248,1) 100%);
+    background-repeat: no-repeat;
+
+}
+#contenedor{
+    width: 1000px;
+    margin: 0 auto;
+
+}
+#caja-izq{
+    width:640px;
+    float:left;
+}
+
+#caja-der{
+    width:240px;
+    float:right;
+    padding: 0px 30px 30px 0px;
+    
+}
+.contenedor-post{
+    width: 90%;
+    margin: 0 auto;
+}
+.contenedor-post-img{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+}
+#clear{
+    clear: both;
+}
+.post{
+    margin: 0px 0px 30px 0px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.post h3{
+    padding: 4px 35px 4px 15px; 
+    font-weight: normal; 
+    color: #98bfcc;
+}
+.post p{
+    padding: 20px 0px 0px 30px;
+    float: right;
+}
+aside h3{
+    color: #aad224;
+    font-size: 32px;
+}
+#caja-der h3{
+    padding: 15px 0px 0px 0px;
+}
+#caja-der ul li{
+    padding: 15px 0px 0px 0px;
+}
+#caja-der ul li{
+    list-style-image: url(img07.jpg);
+}
+/*footer{
+    height: 44px;
+    width: auto;
+    margin: 0 auto; 
+    padding: 20px 0px; 
+    background: #000000; 
+    color: #686767;
+}*/

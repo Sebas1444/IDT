@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script language="JavaScript">
+        function calcular() {
+            var capital = parseInt(document.getElementById("capital").value);
+            var ganancia = capital * 2 / 100;
+            document.getElementById("resultado").innerHTML =
+                "La ganancia del 2% a partir del capital es:" + ganancia;
+        }
+    </script>
+</head>
+
+<body>
+    <span>Capital:</span><input type="text" id="capital">
+    <br><br>
+    <button type="button" onclick="calcular()">Calcular</button>
+    <br><br>
+    <span id="resultado"></span>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script language="JavaScript">
+        function calcular() {
+            var lado = parseInt(document.getElementById("lado").value);
+            var area = lado * lado;
+            var perimetro = lado * 4;
+            document.getElementById("resultado").innerHTML =
+                "<strong>El area del cuadrado es:" + area + "</strong><br><br>" +
+                "El perimetro del cuadrado es:" + perimetro;
+        }
+    </script>
+</head>
+
+<body>
+    <span>Lado del cuadrado:</span><input type="text" id="lado">
+    <br><br>
+    <button type="button" onclick="calcular()">Calcular</button>
+    <br><br>
+    <span id="resultado"></span>
+</body>
+
+</html>

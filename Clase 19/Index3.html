@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sistema de Grilla de Booststrap 4</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <style>
+        .pr-10{
+            padding-right: 10rem;
+        }
+        .bb-azul{
+            border-bottom: 3px solid #007bff;
+
+        }
+    </style>
+  </head>
+  <body>
+    <form action="">
+        <div class="card-header bg-primary text-white text-right mb-3 pr-10">
+            Listado de Usuario
+        </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-2 text-right">
+                <label for="id" class="text-capitalize">Desde Id</label>
+              </div>
+              <div class="col-sm-3">
+                <input
+                  type="text"
+                  name="id"
+                  id="id"
+                  class="form-control"
+                  placeholder="Desde Id"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-2 text-right">
+                <label for="hid" class="text-capitalize">Hasta Id</label>
+              </div>
+              <div class="col-sm-3">
+                <input
+                  type="text"
+                  name="hid"
+                  id="hid"
+                  class="form-control"
+                  placeholder="Hasta Id"
+                />
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="card-footer bb-azul">
+        <div class="row">
+          <div class="col-sm-6"></div>
+          <div class="col-sm-6">
+            <div class="text-right">
+              <button class="btn btn-primary">Previsualizar Datos</button>
+              <button class="btn btn-primary">Exportar a PDF</button>
+              <button class="btn btn-primary">Exportar a Excel</button>
+              <button class="btn btn-primary">Salir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

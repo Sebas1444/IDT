@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script language="JavaScript">
+        function cambiar(valor) {
+            if (valor == 1) {
+                img.src = "Foto1.jpg";
+            }
+            else {
+                img.src = "Foto2.jpg";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>Imagen que cambia cuando entra y sale el
+            mouse
+    </center>
+    </h2>
+    <br><br>
+    <center>
+        <img name="img" src="Foto1.jpg" onMouseOver="cambiar(2)" onMouseOut="cambiar(1)" width="100" height="150">
+    </center>
+</body>
+
+</html>

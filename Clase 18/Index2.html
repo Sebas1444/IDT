@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <title>Popovers</title>
+    </head>
+    <body>
+        <!--Data-placement="top","right","bottom"-->
+        <button type="button" class="btn btn-secondary" data-toggle="popover"
+        data-trigger="hover" data-placement="right" title="Titulo de Popover"
+        data-content="Y aqui algo de contenido increible. Es muy atractico. ¿Verdad?">
+        Popover on top
+    </button>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        //Es necesario aplicar la funcion popover a los botones correspondientes
+        $(function (){
+            $('[data-toggle="popover"]').popover();
+        }); 
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Resultado</title>
+    <script src="./jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <form>
+        MENSAJE: <input type="text" name="message" value="¡Escribe tu texto aquí!">
+    </form>
+    <button type="button">¡Agregaar!</button><br />
+    <div id="messages"></div>
+    <script>
+        $("button").on("click", function () {
+            var toAdd = $("input[name=message]").val();
+            $("#messages").html("<p>" + toAdd + "</p>");
+        });
+    </script>
+</body>
+</html>

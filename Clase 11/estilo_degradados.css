@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div{
+    border: 1px solid;
+    float: left;
+    height: 140px;
+    width: 140px;
+    margin: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    word-wrap: break-word;
+    /*Word-warp que sirve para especificar que las palabras que sean
+    demasiado largas se deben cortar, el otro valor posible es "normal"*/
+}
+h2{margin: 55px 0 -30px 65px; font-size: 22px; white-space:pre;
+    text-align: center; width: 400px;}
+/*pre: no se eliminan los espacios en blanco sobrantes y sólo se muestran los saltos
+de línea incluidos en el texto original*/
