@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Problema</title>
+    <script type="text/javascript" src="./jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <input type="button" value="Obtener el texto contenido en un párrafo" id="boton1"><br>
+    <input type="button" value="Modificar el texto de un párrafo" id="boton2"><br>
+    <input type="button" value="Modificar el texto de los elementos td de una tabla" id="boton3"><br>
+    <p id="parrafo1">Texto del primer párrafo</p>
+    <table border="1">
+        <tr>
+            <td>celda 1,1</td>
+            <td>celda 1,2</td>
+            <td>celda 2,1</td>
+            <td>celda 2,2</td>
+        </tr>
+    </table>
+    <script>
+        $("#boton1").click(function () {
+            alert($("#parrafo1").text());
+        });
+        $("#boton2").click(function () {
+            $("#parrafo1").text("Nuevo texto del párrafo");
+        });
+        $("#boton3").click(function () {
+            $("tr").find("td").eq(3).text("texto nuevo");
+            //$("td").text("texto nuevo");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Agregar campos al formulario dinámicamente</title>
+    <script src="./jquery-3.6.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <form>
+        <div id="insertar">
+            <p>Nombre:<br> <input type="Text" name="nombre"></p>
+            <p>Edad:<br><input type="Text" name="Edad"></p>
+            <p>Compra:<br><input type="Text" name="compra1"></p>
+        </div>
+        <p><a href="#" id="mascampos">Más campos</a></p>
+        <p><input type="submit" value="enviar"></p>
+    </form>
+    <script>
+        var indice = 2;
+        $("#mascampos").click(function () {
+            texto_insertar = '<p> Compra ' + indice + ':<br>' +
+                '<input type="text" name="compra' + indice +
+                '" /></p>';
+            indice++;
+            $("#insertar").append(texto_insertar);
+        });
+    </script>
+</body>
+
+</html>

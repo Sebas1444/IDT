@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Conteo de caracteres con jquery</title>
+    <script src="./jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <form>
+        <textarea rows="5" cols="30" id="mitextarea" maxlength="20">hola</textarea>
+        <div id="contador"></div>
+    </form>
+    <script>
+        $("#mitextarea").keyup(function () {
+            $("#contador").html("Conteo de caracteres "
+                + $("#mitextarea").val().length);
+        });
+    </script>
+</body>
+
+</html>
