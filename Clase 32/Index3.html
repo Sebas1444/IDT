@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <style>
+        .cabeza {
+            background-color: #0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="boton1">asocia clase</button>
+    <table border="1">
+        <tr>
+            <td>
+                <p>Párrafo dentro de la primer tabla.</p>
+            </td>
+            <td>
+                <p>
+                    Párrafo dentro de la primer tabla.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Párrafo dentro de la primer tabla.</p>
+            </td>
+            <td>
+                <p>
+                    Párrafo dentro de la primer tabla.</p>
+            </td>
+        </tr>
+    </table>
+    <script>
+        $("#boton1").click(function () {
+            $("table").addClass("cabeza");
+        });
+    </script>
+</body>
+
+</html>
