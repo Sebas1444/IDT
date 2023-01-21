@@ -1,11 +1,13 @@
 <html>
+
 <head>
-<meta charset=UTF-8">
-<title></title>
+    <meta charset=UTF-8">
+    <title></title>
 </head>
+
 <body>
-Esta es una pagina super simple
-<?php
+    Esta es una pagina super simple
+    <?php
 echo "Me aparecerá esta línea?";
 echo "<br><h1><font color='FF0000'>Texto grande y
 rojo</font></h1>";
@@ -23,4 +25,5 @@ ya que llevan a una mala
 interpretación del código*/
 ?>
 </body>
+
 </html>
