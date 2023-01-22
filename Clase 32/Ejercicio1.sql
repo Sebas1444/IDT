@@ -1,6 +1,8 @@
 //1- Crearemos una tabla llamada "agenda". Debe tener los siguientes campos:
-apellido (cadena de 30), nombre (cadena de 20), domicilio (cadena de 30) y
-telefono (cadena de 11);
+//apellido (cadena de 30), nombre (cadena de 20), domicilio (cadena de 30) y
+//telefono (cadena de 11);
+create table agenda( apellido varchar(30), nombre varchar(20), domicilio
+varchar(30), telefono varchar(11) );
 //2- Ingrese los siguientes registros:
 insert into agenda (apellido, nombre, domicilio, telefono)
 values ('Moreno','Alberto','Colon 123','4234567');
